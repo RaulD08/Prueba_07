@@ -1,0 +1,108 @@
+<div class="bg">
+    <div class="crearPj" id="crearPj1">Pj1</div>
+    <div class="contForm pj1" id="formPj1">
+      <div class="formSec">
+        <label for="formNombre">Nombre:</label>
+        <input class="formNombre" id="formNombre" type="text" value="Personaje">
+      </div>
+      <div class="formSec">
+        <label for="formNivel">Nivel:</label>
+        <select class="formNivel" id="formNivel">
+          <!-- Opciones del select -->
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+        </select>
+      </div>
+      <div class="formSec">
+        <label for="formVida" id="labelVida1">Vida:</label>
+        <input class="formVida" id="formVida" type="range" min="50" max="150">
+      </div>
+      <div class="formSec">
+        <label for="formArma">Arma:</label>
+        <select class="formArma" id="formArma"></select>
+      </div>
+      <div class="formSec">
+        <label for="formColor">Color:</label>
+        <input class="formColor" id="formColor" type="color" value="#0000ff">        
+      </div>
+      <div class="formSec">
+        <div class="formVel" id="velocidadPj1">Velocidad:</div>      
+      </div>
+      <div class="formSecC">
+        <div class="formCrear" id="formCrear">Crear</div>
+      </div>
+    </div>
+    
+    <div class="crearPj" id="crearPj2">Pj2</div>
+    <div class="contForm pj2" id="formPj2">
+      <div class="formSec">
+        <label for="formNombre">Nombre:</label>
+        <input class="formNombre" id="formNombre2" type="text" value="Enemigo">
+      </div>
+      <div class="formSec">
+        <label for="formNivel2">Nivel:</label>
+        <select class="formNivel" id="formNivel2">
+            <!-- Opciones del select -->
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+          </select>
+      </div>
+      <div class="formSec">
+        <label for="formVida2" id="labelVida2">Vida:</label>
+        <input class="formVida" id="formVida2" type="range" min="50" max="150">
+      </div>
+      <div class="formSec">
+        <label for="formArma">Arma:</label>
+        <select class="formArma" id="formArma2"></select>
+      </div>
+      <div class="formSec">
+        <label for="formColor">Color:</label>
+        <input class="formColor" id="formColor2" type="color" value="#ff0000">        
+      </div>
+      <div class="formSec">
+        <div class="formVel" id="velocidadPj2">Velocidad:</div>      
+      </div>
+      <div class="formSecC">
+        <div class="formCrear" id="formCrear2">Crear</div>
+      </div>
+    </div>
+
+    
+    <div class="arena-bg"></div>
+    <div class="arena">
+      <div class="cont1">
+        <div id="pers1" class="pers pers1"></div>
+        <div id="arma1" class="arma arma1"><img id="arma1img" src="" alt=""></div>
+        <div class="barra-vida vidapers1">
+          <div id="vida1" class="vida1"></div>
+        </div>
+        <div class="btnAtk" id="atk1">Atacar</div>
+        <div id="contadorDano1" class="contadorDano dano1">20</div>
+      </div>
+      <div class="cont2">
+        <div id="pers2" class="pers pers2"></div>
+        <div id="arma2" class="arma arma2"><img id="arma2img" src="" alt=""></div>
+        <div class="barra-vida vidapers2">
+          <div id="vida2" class="vida2"></div>
+        </div>
+        <div class="btnAtk" id="atk2">Atacar</div>
+        <div id="contadorDano2" class="contadorDano dano2">30</div>      
+      </div>
+      <div class="contCombate">
+        <div class="btnAtk reiniciar" id="reiniciar">Reiniciar</div>
+        <div id="btnCombate" class="btnAtk btnCombate">Combate</div>
+      </div>
+    </div>
+    <div class="narrador">
+      <div id="textoNarrador"></div>
+    </div>
+  </div>
+
+  <body>
+  </body>
