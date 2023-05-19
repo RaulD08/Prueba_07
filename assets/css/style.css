@@ -513,3 +513,10 @@
 .reiniciar:active{
     background-color: #647Ab3;
 }
+
+
+@media (max-width: 500px) {
+    .contForm.pj2{
+        top: 50px;
+    }
+}
