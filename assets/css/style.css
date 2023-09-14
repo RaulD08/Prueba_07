@@ -7,7 +7,7 @@
 .bg{
     width: 100%;
     min-height: 100vh;
-    background: linear-gradient(0deg, #7FAD71 0% 40%, #B0E46A 51%, #B0DEF9 51%, #79C9F9 70%);
+    background: linear-gradient(0deg, #7FAD71 0% 10%, #B0E46A 51%, #B0DEF9 51%, #79C9F9 90%);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -50,6 +50,26 @@
 }
 .crearPj#crearPj2{
     top: 70px;
+}
+
+.indicadorPjs{
+    position: absolute;
+    top: 50px;
+    left: 50px;
+    color: #ffffff;
+    text-shadow: 0px 0px 3px hsl(223, 37%, 22%);
+    font-weight: bold;
+    font-size: large;
+    animation: indicador 1s ease forwards;
+    opacity: 0;
+}
+@keyframes indicador {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
 }
 
 .contForm{

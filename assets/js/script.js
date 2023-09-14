@@ -7,10 +7,6 @@ $(document).ready(function () {
 function cargarContenido() {
     $('#contenido').load('contenido.html', function() {
 
-        // ajusta el volumen y reproduce audio
-        $('#bgMusic').prop('volume', 0.2);
-        $('#bgMusic').trigger("play")
-
         // creación de clases para personajes y armas
         class Arma{
             constructor(nombre, nivel, poder){
@@ -370,39 +366,23 @@ function cargarContenido() {
             $("#textoNarrador").scrollTop($("#textoNarrador").prop("scrollHeight"));
         }
 
-        // despliega formularios
+        // despliega formularios y oculta el indicador inicial
         $("#crearPj1").click(function () {
-            // agregar if para no abrir si el objeto ya está en pantalla
             $("#formPj2").hide(); 
-            $("#formPj1").toggle(); 
+            $("#formPj1").toggle();
+            $(".indicadorPjs").hide();
         })
 
         $("#crearPj2").click(function () {
             $("#formPj1").hide();
-            $("#formPj2").toggle(); 
+            $("#formPj2").toggle();
+            $(".indicadorPjs").hide();
         })
 
         // función a botón de reiniciar
         $("#reiniciar").click(function () { 
             cargarContenido()
         });
-    
-        // AÑADIR VERIFICACIONES EN FORMULARIOS ---------------------------------------------------
-
-        // crear función y ejecutar con 2 eventos:
-        /*
-        function miFuncion() {
-            console.log("Evento click o keydown con la tecla Espacio ocurrió");
-        }
-        
-        $(document).on("keydown", function(event) {
-            // Verificar si el evento fue desencadenado por la tecla "Espacio"
-            if (event.which === 32) {   // 49 y 50 para 1 y 2
-            miFuncion();
-            }
-        });
-        
-        $("#miElemento").on("click", miFuncion);
-        */
+      
       })
 }
